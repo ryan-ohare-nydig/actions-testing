@@ -18,4 +18,4 @@ jobs:
       - name: Invoke workflow without inputs
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: CI-2
+          workflow: CI 2
