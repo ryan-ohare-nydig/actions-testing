@@ -4,6 +4,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -17,6 +18,5 @@ jobs:
           disable-sudo: true
       - uses: actions/checkout@v3
       - name: Invoke workflow without inputs
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: CI 2
+        uses: technote-space/assign-author@v1.3.1
+        
